@@ -7,3 +7,45 @@
   --color6:#e8d8be;
   --color7:#dc2222;
 }
+
+header {
+  display:grid;
+  grid-area:header;
+  height:60px;
+}
+
+#logo {
+  grid-area:left;
+  height:40px;
+}
+
+#titre {
+  grid-area:middle;
+}
+
+#timer {
+  grid-area:right;
+}
+
+nav ul {
+  list-style-type:none;
+  width:100px;
+  background-color:var(--color2);
+  margin:0;
+  padding:0;
+}
+
+nav li a {
+  display:block;
+  text-decoration:none;
+  color:var(--color1);
+}
+
+nav li a:hover {
+  color:var(--color7);
+  text-decoration:underline;
+}
+
+footer {
+  height:60px;
+}
