@@ -9,30 +9,23 @@
 }
 
 header {
-  grid-area:header;
   text-align:center;
   height:60px;
 }
 
-#en-tete {
-  display:grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left left middle middle right right' 
-    'footer footer footer footer footer footer';
+#en-tete div {
+  display:inline-block;
 }
 
-#logo {
-  grid-area:left;
-  height:40px;
+#logo img {
+  height:20px;
 }
 
 #titre {
-  grid-area:middle;
+
 }
 
 #timer {
-  grid-area:right;
 }
 
 nav ul {
