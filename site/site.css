@@ -8,32 +8,64 @@
   --color7:#dc2222;
 }
 
+body {
+    font-family:serif;
+}
+
 header {
   text-align:center;
-  height:60px;
+  height:200px;
+    
 }
 
 #en-tete div {
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+    grid-template-columns:4;
+    grid-gap:0;
+}
+
+#logo button {
+    background-color:white;
+    border:none;
+    color:white;
+    width:200px;
+    position:absolute;
+}
+
+#logo form {
+    position:absolute;
+}
+
+#logo button:hover {
+    cursor:pointer;
 }
 
 #logo img {
-  height:40px;
+  height:200px;
 }
 
 #logo {
-  grid-column:1/4;
+    grid-column:1/4;
+
 }
 
-#titre {
-  grid-column-start:2;
-  grid-column-end:3;
+#consigne {
+    grid-column-start:2;
+    grid-column-end:3;
+    font-family:Verdana;
+    color:var(--color7);
 }
 
 #timer {
-  grid-column:4/4;
+    grid-column:4/4;
 }
+
+#timer p {
+    position:absolute;
+    top:10px;
+    right:30px;
+}
+
 
 nav ul {
   list-style-type:none;
