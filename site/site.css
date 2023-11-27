@@ -14,18 +14,25 @@ header {
 }
 
 #en-tete div {
-  display:inline-block;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
 }
 
 #logo img {
-  height:20px;
+  height:40px;
+}
+
+#logo {
+  grid-column:1/4;
 }
 
 #titre {
-
+  grid-column-start:2;
+  grid-column-end:3;
 }
 
 #timer {
+  grid-column:4/4;
 }
 
 nav ul {
