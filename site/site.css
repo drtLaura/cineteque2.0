@@ -9,9 +9,17 @@
 }
 
 header {
-  display:grid;
   grid-area:header;
+  text-align:center;
   height:60px;
+}
+
+#en-tete {
+  display:grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
 }
 
 #logo {
@@ -47,5 +55,6 @@ nav li a:hover {
 }
 
 footer {
+  grid-area:footer;
   height:60px;
 }
