@@ -1,0 +1,68 @@
+<?php
+session_start();
+$_SESSION['identifiant'] = $_GET['id'];
+echo $_SESSION['identifiant'];
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <header>
+      <div id="en-tete">
+        <div id="logo">
+          <button name="logo"><img src="img/logo.png"/></button>
+        </div>
+        <div id="consigne">
+            <h3>Votre consigne s'affichera ici.</h3>
+        </div>
+        <div id="timer">
+          <p>00:00:00</p>
+        </div>
+      </div>
+      <nav id="menu-genre">
+        <ul>
+            <li>
+                <a>Romance</a>
+            </li>
+            <li>
+                <a>Policier</a>
+            </li>
+            <li>
+                <a>Action</a>
+            </li>
+            <li>
+                <a>Jeunesse</a>
+            </li>
+            <li>
+                <a>Comédies</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="tuto">
+        <p id="intro">Avant de démarrer l'expérience, voici un <strong>court tutoriel</strong> pour vous familiariser avec l'interface du site. Cliquez sur le <strong>bouton "Suivant"</strong> quand vous serez prêt à démarrer.</p>
+        <h3>Bienvenue sur une page prototype de "CinéThèque", un site de cinémathèque.</h3>
+        <p>Vous pouvez faire défiler le contenu de l'encadré en scrollant de haut en bas dans l'encadré.</p>
+        <p>Vos déplacements sur le site devront se faire principalement via le <strong>menu de navigation</strong> <img src="img/menuTuto.png"/>et le <strong>logo</strong> du site <img src="img/logo.png"/>, présents sur les parties <em>gauche</em> de chaque page.</p>
+        <p>La <strong>consigne</strong> qui vous sera attribuée vous sera rappelée en <em>haut</em> de chaque page du site.</p>
+        <p>Vous pouvez consulter le temps que vous mettez à effectuer une tâche grâce au <strong>chronomètre</strong> <img id="timer" src="img/timerTuto.png" /> situé en <em>haut à droite</em> de chaque page du site.</p> 
+        <p>Une <strong>tâche</strong> démarre au lancement du chronomètre et se termine lorsque vous cliquer sur le bouton <strong>"en savoir plus"</strong>, situé en dessous des informations du film demandé dans votre consigne.</p>
+        <p id="chance">Vous aurez en tout <strong>cinq tâches</strong> à réaliser avec une consigne différente pour chaque tâche.</p>
+        <p>Pour la passation de cette expérience, il vous est recommandé de vous asseoir à un bureau dans un endroit calme pour éviter toute distraction, et de faire cette expérience sur un ordinateur en activant le mode "plein écran".</p>
+        <p id="chance">N'oubliez pas de cliquer sur le bouton "en savoir plus" quand vous pensez avoir trouvé le film demandé.</p>
+        <p id="chance">Et surtout, n'oubliez pas que votre temps est compté.</p>
+        <h3 id="chance">Bonne chance !</h3>
+
+        <form method="post" action="traitement.php">
+          <button name="tuto">Suivant</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
