@@ -8,8 +8,14 @@
   --color7:#dc2222;
 }
 
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+}
+
 body {
-    font-family:serif;
+    font-family:Verdana;
 }
 
 header {
@@ -52,8 +58,13 @@ header {
 #consigne {
     grid-column-start:2;
     grid-column-end:3;
-    font-family:Verdana;
     color:var(--color7);
+}
+
+#consigne h3 {
+    position:absolute;
+    left:260px;
+    top:10px;
 }
 
 #timer {
@@ -64,29 +75,129 @@ header {
     position:absolute;
     top:10px;
     right:30px;
+    font-family:serif;
+}
+
+nav {
+    position:absolute;
+    top:210px;
+    text-transform:uppercase;
+    font-size:medium;
+    font-weight:bold;
+    left:10px;
 }
 
 
 nav ul {
   list-style-type:none;
-  width:100px;
-  background-color:var(--color2);
+  width:200px;
+  background-color:rgb(179, 179, 179,0.5);
   margin:0;
-  padding:0;
+  padding:10px;
+    border-radius:10px;
 }
 
-nav li a {
-  display:block;
+nav li , #films li {
+    height:30px;
+}
+
+nav li a , #films li a {
   text-decoration:none;
-  color:var(--color1);
+  color:var(--color2);
+    vertical-align:middle;
 }
 
-nav li a:hover {
+nav li a:hover , #films li a:hover {
   color:var(--color7);
   text-decoration:underline;
+    cursor:pointer;
+}
+
+main {
+    position:absolute;
+    left:240px;
+    top:210px;
+    right:100px;
+    padding:10px;
+    padding-top:0;
+}
+
+main div {
+    border:thick solid rgb(179, 179, 179,0.5);
+    border-radius:10px;
+    padding-left:10px;
+    padding-right:10px;
+    overflow-y: auto;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+    max-height:600px;
+}
+
+#tuto img {
+    height:100px;
+}
+
+#tuto #chance {
+    color:var(--color7);
+}
+
+#tuto h3 {
+    text-align:center;
+}
+
+#tuto p {
+    line-height:2.5;
+}
+
+#tuto #timer {
+    height:35px;
+}
+
+#tuto form {
+    padding-top:10px;;
+    text-align:right;
+    padding-bottom:10px;
+}
+
+#tuto #intro {
+    color:green;
+}
+
+#films ul {
+    list-style-type:none;
+    line-height:2.5;
+}
+
+#films li a , #films li #tags {
+    font-size:small;
+}
+
+#films {
+    padding-bottom:10px;
+}
+
+button {
+    background-color:var(--color7);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-family:Verdana;
+}
+
+button:hover {
+    cursor:pointer;
+    color:black;
+    background-color:rgb(220, 34, 34,0.5);
 }
 
 footer {
-  grid-area:footer;
-  height:60px;
+  position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:var(--color2);
+  height:80px;
+    padding:10px;
 }
