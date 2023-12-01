@@ -1,15 +1,20 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['Timespent_page3'])) {
-    $_SESSION['Timespent_page3'] = 0;
+if (!isset($_SESSION['passenote'])) {
+    $_SESSION['passenote'] = 0;
 }
 
-$elapsed_time_page4 = time() - $_SESSION['start_time'];
-$_SESSION['Timespent_page4'] = $elapsed_time_page4;
-$consigne1 =  $_SESSION['Timespent_page1'] + $_SESSION['Timespent_page2'] + $_SESSION['Timespent_page3'];
-$data = "consigne 1 : ".$consigne1; 
-echo $data;
+$passesucces = time() - $_SESSION['debut'];
+$_SESSION['passesucces'] = $passesucces;
+$consigne1 =  $_SESSION['passegenre'] + $_SESSION['passepays'] + $_SESSION['passenote'];
+$data = "indexconsigne : ". $_SESSION['indexconsigne'] ."consigne : " .$_SESSION['consigne'] . " id : " . $_SESSION['id']; 
+//echo "data". $data;
+echo  "avant" .$_SESSION['indexconsigne'];
+if (isset($_SESSION['indexconsigne']) && $_SESSION['indexconsigne'] < 5) {
+    $_SESSION['indexconsigne']++;
+}
+echo  "après" .$_SESSION['indexconsigne'];
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +22,8 @@ echo $data;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coucou 4</title>
-    <script src="savedata.js"></script>
+    <title>Succès</title>
+    <script src="savedata.js" onload="console.log('Le script savedata.js a été chargé avec succès')"></script>
 </head>
 <body>
     
@@ -26,7 +31,24 @@ echo $data;
     var data = JSON.parse('<?php echo json_encode($data); ?>');
     savedata(data);
 </script>
-    <h1>Coucou 4</h1>
+    <h1>Succès</h1>
     <p>Temps passé sur les pages précédentes: <?php echo $data; ?> secondes</p>
+
+<?php if ($_SESSION['indexconsigne'] != 5) {
+    $ref = "genreAI.php";
+    $msgbutton = "Continuer";
+}
+else{
+    session_destroy();
+     $ref = "terminer.php";
+     $msgbutton = "Terminer";
+}
+?>
+
+<form action="<?php echo $ref;?>" method="post">
+        <input type="submit" value="<?php echo $msgbutton;?>">
+</form>
+
+    
 </body>
 </html>
