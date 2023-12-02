@@ -71,7 +71,7 @@ echo "passetotal :". $passetotal;
 
    
 <?php if ($_SESSION['indexconsigne'] <= 5) {
-    $ref = "genreAI.php?id=".$_SESSION['id'];
+    $ref = "genreTI.php?id=".$_SESSION['id'];
     $msgbutton = "Continuer";
 }
 else{

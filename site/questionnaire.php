@@ -90,7 +90,12 @@ echo $_SESSION['id'];
             // Vérifier si toutes les questions ont été répondues
             if (isset($_POST['taches']) && isset($_POST['menu_genres']) && isset($_POST['menu_pays']) && isset($_POST['menu_notes'])) {
                 // Récupérer les réponses
-                $_SESSION['data'] = $_SESSION['data'] ."question taches : ". $_POST['taches']."question genre : ". $_POST['menu_genres']."question pays : ".$_POST['menu_pays']."question note : ". $_POST['menu_notes']; 
+                $_SESSION['data'] = array_merge($_SESSION['data'], [
+                    'question taches : ' => $_POST['taches'],
+                    'question genre : ' => $_POST['menu_genres'],
+                    'question pays : ' => $_POST['menu_pays'],
+                    'question note : ' => $_POST['menu_notes']
+                ]);
                 // Ajouter les réponses au tableau $_SESSION['data']
 
                 // Rediriger vers la page de remerciement

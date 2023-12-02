@@ -26,7 +26,7 @@ $message = "Merci pour votre visite !";
 </head>
 <body>
         <?php
-        echo $_SESSION['data'];
+         print_r($_SESSION['data']);
         ?>
         <script type="application/javascript"> 
             var data = JSON.parse('<?php echo json_encode($_SESSION['data']); ?>');

@@ -13,7 +13,7 @@ session_start();
 <body>
     <h1>Pays</h1>
     <p> Voici la consigne que vous devez réaliser : <?php echo $_SESSION['consigne']?> </p>
-    <form action="noteAI.php" method="post">
+    <form action="noteTI.php" method="post">
         <input type="submit" value="Aller à Note">
     </form>
 </body>
