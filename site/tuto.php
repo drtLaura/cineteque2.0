@@ -1,7 +1,21 @@
 <?php
 session_start();
-$_SESSION['identifiant'] = $_GET['id'];
-echo $_SESSION['identifiant'];
+$_SESSION['id'] = $_GET['id'];
+echo $_SESSION['id'];
+
+if (substr($_SESSION['id'], 0, 1) === "1") {
+  $bonsite = "AI/genreAI.php?id=" . $_SESSION['id'];
+}
+if (substr($_SESSION['id'], 0, 1) === "2") {
+  $bonsite = "AT/genreAT.php?id=" . $_SESSION['id'];
+}
+if (substr($_SESSION['id'], 0, 1) === "3") {
+  $bonsite = "TI/genreTI.php?id=" . $_SESSION['id'];
+}
+if (substr($_SESSION['id'], 0, 1) === "4") {
+  $bonsite = "TT/genreTT.php?id=" . $_SESSION['id'];
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -57,7 +71,7 @@ echo $_SESSION['identifiant'];
         <p id="chance">Et surtout, n'oubliez pas que votre temps est compté.</p>
         <h3 id="chance">Bonne chance !</h3>
 
-        <form method="post" action="traitement.php">
+        <form method="post" action="<?php echo $bonsite; ?>">
           <button name="tuto">Suivant</button>
         </form>
       </div>
