@@ -80,7 +80,28 @@ echo $_SESSION['id'];
         <div>
             <input type="radio" name="menu_notes" value="5"> Très laborieuse et très désagréable
         </div>
+        </div>
+        <p>A quelle fréquence utilisez-vous une interface web ?</p>
+            <div>
+                <input type="radio" name="frequence" value="1"> Quotidiennement
+            </div>
+            <div>
+                <input type="radio" name="frequence" value="2"> Quelques fois
+            </div>
+            <div>
+                <input type="radio" name="frequence" value="3"> Jamais
+            </div>
 
+            <p>Êtes-vous à l'aise lorsque vous utilisez un site web ?</p>
+            <div>
+                <input type="radio" name="aise" value="1"> Oui
+            </div>
+            <div>
+                <input type="radio" name="aise" value="2"> Pas trop
+            </div>
+            <div>
+                <input type="radio" name="aise" value="3"> Non
+            </div>
         <br><br>
         <input type="submit" value="Envoyer">
         </form>
@@ -94,7 +115,9 @@ echo $_SESSION['id'];
                     'question taches : ' => $_POST['taches'],
                     'question genre : ' => $_POST['menu_genres'],
                     'question pays : ' => $_POST['menu_pays'],
-                    'question note : ' => $_POST['menu_notes']
+                    'question note : ' => $_POST['menu_notes'],
+                    'question frequence : ' => $_POST['frequence'],
+                    'question aise : ' => $_POST['aise']
                 ]);
                 // Ajouter les réponses au tableau $_SESSION['data']
 
