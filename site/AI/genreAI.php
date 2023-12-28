@@ -12,26 +12,31 @@ if ($_SESSION['indexconsigne'] == 1){
     echo 'indexconsigne = 1';
     $_SESSION['consigne'] = "je suis la consigne 1";
     echo "voici la consigne ".$_SESSION['consigne'];
+    $_SESSION['res']=" je suis la réponse";
 }
 if ($_SESSION['indexconsigne'] ==  2) {
     echo 'indexconsigne = 2';
     $_SESSION['consigne'] = " je suis la consigne 2";
     echo "voici la consigne ".$_SESSION['consigne'];
+    $_SESSION['res']=" je suis la réponse";
 }
 if ($_SESSION['indexconsigne'] ==  3) {
     echo 'indexconsigne = 3';
     $_SESSION['consigne'] = "je suis la consigne 3";
     echo "voici la consigne ".$_SESSION['consigne'];
+    $_SESSION['res']=" je suis la réponse";
 }
 if ($_SESSION['indexconsigne'] ==  4) {
     echo 'indexconsigne = 4';
     $_SESSION['consigne'] = "je suis la consigne 4";
     echo "voici la consigne ".$_SESSION['consigne'];
+    $_SESSION['res']=" je suis la réponse";
 }
 if ($_SESSION['indexconsigne'] == 5) {
     echo 'indexconsigne = 5';
     $_SESSION['consigne'] = "je suis la consigne 5";
     echo "voici la consigne ".$_SESSION['consigne'];
+    $_SESSION['res']=" je suis la réponse";
 }
 //Randomiser l'ordre des items du menu de navigation
 $menuLiens=array("jeunesse.php", "comedies. php","action.php", "romance.php" , "policier.php");
@@ -167,7 +172,7 @@ $_SESSION["item5"]="Policier";
         <div id="films">
       <ul>
           <li>
-              <p>Message</p>
+              <p>Ce n'est pas la bonne page.</p>
           </li>
           <li>
         <form method="post" action="../../succès.php">              <a>En savoir plus</a>
