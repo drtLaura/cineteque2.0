@@ -146,19 +146,19 @@ $_SESSION["item5"]="Policier";
       <nav id="menu-genre">
         <ul>
             <li>
-                <a href=<?php $_SESSION['lien1']?>><?php echo $_SESSION['item1']?></a>
+                <a href=<?php '$_SESSION['lien1']'?>><?php echo $_SESSION['item1']?></a>
             </li>
             <li>
-                <a href=<?php $_SESSION['lien2']?>><?php echo $_SESSION['item2']?></a>
+                <a href=<?php '$_SESSION['lien2']'?>><?php echo $_SESSION['item2']?></a>
             </li>
             <li>
-                <a href=<?php $_SESSION['lien3']?>><?php echo $_SESSION['item3']?></a>
+                <a href=<?php '$_SESSION['lien3']'?>><?php echo $_SESSION['item3']?></a>
             </li>
             <li>
-                <a href=<?php $_SESSION['lien4']?>><?php echo $_SESSION['item4']?></a>
+                <a href=<?php '$_SESSION['lien4']'?>><?php echo $_SESSION['item4']?></a>
             </li>
             <li>
-                <a href=<?php $_SESSION['lien5']?>><?php echo $_SESSION['item5']?></a>
+                <a href=<?php '$_SESSION['lien5']'?>><?php echo $_SESSION['item5']?></a>
             </li>
         </ul>
       </nav>
