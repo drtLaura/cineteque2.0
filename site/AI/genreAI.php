@@ -40,13 +40,67 @@ if ($_SESSION['indexconsigne'] == 5) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../site.css">
+    <link rel="stylesheet" href="ai.css">
     <title>Genre</title>
 </head>
 <body>
     <h1>Genre</h1>
-    <p> Voici la consigne que vous devez réaliser : <?php echo $_SESSION['consigne']?> </p>
-    <form action="paysAI.php" method="post">
+    <header>
+      <div id="en-tete">
+        <div id="logo">
+            <form method="post" action="ai.php">
+          <button name="logo"><img src="../img/logo.png"/></button>
+                </form>
+        </div>
+        <div id="consigne">
+            <h3>Voici la consigne que vous devez réaliser : <?php echo $_SESSION['consigne']?></h3>
+        </div>
+        <div id="timer">
+          <p><?php echo $_SESSION['debut']?></p>
+        </div>
+      </div>
+      <nav id="menu-genre">
+        <ul>
+            <li>
+                <a href="jeunesse.php">Jeunesse</a>
+            </li>
+            <li>
+                <a href="comedies.php">Comédies</a>
+            </li>
+            <li>
+                <a href="action.php">Action</a>
+            </li>
+            <li>
+                <a href="romance.php">Romance</a>
+            </li>
+            <li>
+                <a href="policier.php">Policier</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div id="films">
+      <ul>
+          <li>
+              <p>Message</p>
+          </li>
+          <li>
+        <form method="post" action="../../succès.php">              <a>En savoir plus</a>
+</form>
+          </li>
+      </ul>
+            <ul>
+          <li>
+              <form action="paysAI.php" method="post">
         <input type="submit" value="Aller à Pays">
     </form>
+          </li>
+      </ul>
+            </div>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
