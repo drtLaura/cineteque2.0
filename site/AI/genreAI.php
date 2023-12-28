@@ -33,7 +33,90 @@ if ($_SESSION['indexconsigne'] == 5) {
     $_SESSION['consigne'] = "je suis la consigne 5";
     echo "voici la consigne ".$_SESSION['consigne'];
 }
-?>
+//Randomiser l'ordre des items du menu de navigation
+$menuLiens=array("jeunesse.php", "comedies. php","action.php", "romance.php" , "policier.php");
+shuffle($menuLiens);
+$_SESSION["lien1"]=$menuLiens[0];
+$_SESSION["lien2"]=$menuLiens[1];
+$_SESSION["lien3"]=$menuLiens[2];
+$_SESSION["lien4"]=$menuLiens[3];
+$_SESSION["lien5"]=$menuLiens[4];
+if ($_SESSION["lien1"]=="jeunesse.php") {
+$_SESSION["item1"]="Jeunesse";
+}
+if ($_SESSION["lien1"]=="comedies.php") {
+$_SESSION["item1"]="Comédies";
+}
+if ($_SESSION["lien1"]=="action.php") {
+$_SESSION["item1"]="Action";
+}
+if ($_SESSION["lien1"]=="romance.php") {
+$_SESSION["item1"]="Romance";
+}
+if ($_SESSION["lien1"]=="policier.php") {
+$_SESSION["item1"]="Policier";
+}
+if ($_SESSION["lien2"]=="jeunesse.php") {
+$_SESSION["item2"]="Jeunesse";
+}
+if ($_SESSION["lien2"]=="comedies.php") {
+$_SESSION["item2"]="Comédies";
+}
+if ($_SESSION["lien2"]=="action.php") {
+$_SESSION["item2"]="Action";
+}
+if ($_SESSION["lien2"]=="romance.php") {
+$_SESSION["item2"]="Romance";
+}
+if ($_SESSION["lien2"]=="policier.php") {
+$_SESSION["item2"]="Policier";
+}
+if ($_SESSION["lien3"]=="jeunesse.php") {
+$_SESSION["item3"]="Jeunesse";
+}
+if ($_SESSION["lien3"]=="comedies.php") {
+$_SESSION["item3"]="Comédies";
+}
+if ($_SESSION["lien3"]=="action.php") {
+$_SESSION["item3"]="Action";
+}
+if ($_SESSION["lien3"]=="romance.php") {
+$_SESSION["item3"]="Romance";
+}
+if ($_SESSION["lien3"]=="policier.php") {
+$_SESSION["item3"]="Policier";
+}
+if ($_SESSION["lien4"]=="jeunesse.php") {
+$_SESSION["item4"]="Jeunesse";
+}
+if ($_SESSION["lien4"]=="comedies.php") {
+$_SESSION["item4"]="Comédies";
+}
+if ($_SESSION["lien4"]=="action.php") {
+$_SESSION["item4"]="Action";
+}
+if ($_SESSION["lien4"]=="romance.php") {
+$_SESSION["item4"]="Romance";
+}
+if ($_SESSION["lien4"]=="policier.php") {
+$_SESSION["item4"]="Policier";
+}
+if ($_SESSION["lien5"]=="jeunesse.php") {
+$_SESSION["item5"]="Jeunesse";
+}
+if ($_SESSION["lien5"]=="comedies.php") {
+$_SESSION["item5"]="Comédies";
+}
+if ($_SESSION["lien5"]=="action.php") {
+$_SESSION["item5"]="Action";
+}
+if ($_SESSION["lien5"]=="romance.php") {
+$_SESSION["item5"]="Romance";
+}
+if ($_SESSION["lien5"]=="policier.php") {
+$_SESSION["item5"]="Policier";
+}
+>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,19 +146,19 @@ if ($_SESSION['indexconsigne'] == 5) {
       <nav id="menu-genre">
         <ul>
             <li>
-                <a href="jeunesse.php">Jeunesse</a>
+                <a href=<?php $_SESSION['lien1']?>><?php echo $_SESSION['item1']?></a>
             </li>
             <li>
-                <a href="comedies.php">Comédies</a>
+                <a href=<?php $_SESSION['lien2']?>><?php echo $_SESSION['item2']?></a>
             </li>
             <li>
-                <a href="action.php">Action</a>
+                <a href=<?php $_SESSION['lien3']?>><?php echo $_SESSION['item3']?></a>
             </li>
             <li>
-                <a href="romance.php">Romance</a>
+                <a href=<?php $_SESSION['lien4']?>><?php echo $_SESSION['item4']?></a>
             </li>
             <li>
-                <a href="policier.php">Policier</a>
+                <a href=<?php $_SESSION['lien5']?>><?php echo $_SESSION['item5']?></a>
             </li>
         </ul>
       </nav>
