@@ -1,5 +1,51 @@
 <?php
 session_start(); // démarrage session
+
+$_SESSION['debutpays'] = microtime(true) * 1000;
+
+$passegenre = (microtime(true) * 1000) - $_SESSION['debut'];
+$passegenre = round($passegenre, 2);
+
+    if ($_SESSION['indexconsigne'] == 1){
+    $_SESSION['passecons1genre'] = $passegenre;
+    $_SESSION['data'] = array(
+        'id' => $_SESSION['id'],
+        'temps passe consigne 1 genre' => $_SESSION['passecons1genre']
+    );
+    }
+
+
+    if ($_SESSION['indexconsigne'] == 2){
+        $_SESSION['passecons2genre'] = $passegenre;
+        $_SESSION['data'] = 
+            array_merge($_SESSION['data'], array(
+            'temps passe consigne 2 genre' => $_SESSION['passecons2genre']
+        ));
+    }
+
+    if ($_SESSION['indexconsigne'] == 3){
+        $_SESSION['passecons3genre'] = $passegenre;
+        $_SESSION['data'] = 
+            array_merge($_SESSION['data'], array(
+            'temps passe consigne 3 genre' => $_SESSION['passecons3genre']
+        ));
+    }
+
+    if ($_SESSION['indexconsigne'] == 4){
+        $_SESSION['passecons4genre'] = $passegenre;
+        $_SESSION['data'] = 
+            array_merge($_SESSION['data'], array(
+            'temps passe consigne 4 genre' => $_SESSION['passecons4genre']
+        ));
+    }
+    if ($_SESSION['indexconsigne'] == 5){
+        $_SESSION['passecons5genre'] = $passegenre;
+        $_SESSION['data'] = 
+            array_merge($_SESSION['data'], array(
+            'temps passe consigne 5 genre' => $_SESSION['passecons5genre']
+        ));
+    }
+    
 //Randomiser l'ordre des items du menu de navigation
 $menuLiens=array("français.php", "japonais.php","américain.php", "russe.php" , "coréen.php");
 shuffle($menuLiens);
