@@ -172,6 +172,10 @@ main div {
     font-size:small;
 }
 
+#films #message {
+    color:var(--color7);
+}
+
 #films {
     padding-bottom:10px;
 }
