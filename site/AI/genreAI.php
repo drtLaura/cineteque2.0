@@ -2,7 +2,7 @@
 session_start(); // démarrage session
 $_SESSION['id'] = $_GET['id'];
 // Réinitialiser le temps de début chaque fois que cette page est chargée
-$_SESSION['debut'] = time();
+$_SESSION['debut'] = microtime(true) * 1000;
 
 if (!isset($_SESSION['indexconsigne'])) {
     $_SESSION['indexconsigne'] = 1;

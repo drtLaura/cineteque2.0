@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$passetotal = time() - $_SESSION['debut'];
+$passetotal = (microtime(true) - $_SESSION['debut']) * 1000;
 echo "passetotal :". $passetotal;
 
     if ($_SESSION['indexconsigne'] == 1){
@@ -12,7 +12,8 @@ echo "passetotal :". $passetotal;
         'id' => $_SESSION['id'],
         'temps passe consigne 1' => $_SESSION['passecons1']
     );
-}
+    }
+
     if ($_SESSION['indexconsigne'] ==  2) {
         echo 'indexconsigne = 2';
         $_SESSION['passecons2'] = $passetotal;
@@ -30,6 +31,7 @@ echo "passetotal :". $passetotal;
             'temps passe consigne 3' => $_SESSION['passecons3']
         ));
     }
+
     if ($_SESSION['indexconsigne'] == 4) {
         echo 'indexconsigne = 4';
         $_SESSION['passecons4'] = $passetotal;
@@ -38,6 +40,7 @@ echo "passetotal :". $passetotal;
             'temps passe consigne 4' => $_SESSION['passecons4']
         ));
     }
+
     if ($_SESSION['indexconsigne'] == 5) {
         echo 'indexconsigne = 5';
         $_SESSION['passecons5'] = $passetotal;
@@ -46,12 +49,15 @@ echo "passetotal :". $passetotal;
             'temps passe consigne 5' => $_SESSION['passecons5']
         ));
     }
+
     echo "data : ";
     print_r($_SESSION['data']);
     echo "avant" . $_SESSION['indexconsigne'];
-    if (isset($_SESSION['indexconsigne'])) {
+
+    if (isset($_SESSION['indexconsigne'])) { // pour faire incrémenter la consigne
         $_SESSION['indexconsigne']++;
     }
+
     echo "après" . $_SESSION['indexconsigne'];
     ?>
 
