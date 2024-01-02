@@ -2,7 +2,7 @@
 session_start(); // démarrage session
 
 $_SESSION['debutnote'] = microtime(true) * 1000;
-
+echo "debut note".$_SESSION['debut'];
 $passepays = (microtime(true) * 1000) - $_SESSION['debutpays'];
 $passepays = round($passepays, 2);
 
@@ -31,7 +31,6 @@ $passepays = round($passepays, 2);
         ));
     }
 
-
     if ($_SESSION['indexconsigne'] == 4){
         $_SESSION['passecons4pays'] = $passepays;
         $_SESSION['data'] = 
@@ -47,6 +46,7 @@ $passepays = round($passepays, 2);
             'temps passe consigne 5 pays ' => $_SESSION['passecons5pays']
         ));
     }
+
 //Randomiser l'ordre des items du menu de navigation
 $menuLiens=array("1.php", "2.php","3.php", "4.php" , "5.php");
 shuffle($menuLiens);

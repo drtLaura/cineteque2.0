@@ -1,9 +1,9 @@
 <?php
 session_start(); // démarrage session
-$_SESSION['id'] = $_GET['id'];
+//$_SESSION['id'] = $_GET['id'];
 // Réinitialiser le temps de début chaque fois que cette page est chargée
-$_SESSION['debut'] = time();
-$_SESSION["message"]="<p id=\"message\">Ce n'est pas la bonne page.</p>";
+$_SESSION['debut'] = microtime(true) * 1000;
+$_SESSION["message"]="<p id=\"message\"> Veuillez lire et effectuer la consigne située en haut</p>";
 if (!isset($_SESSION['indexconsigne'])) {
     $_SESSION['indexconsigne'] = 1;
 }

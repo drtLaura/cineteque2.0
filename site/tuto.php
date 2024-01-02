@@ -1,7 +1,7 @@
 <?php
 session_start();
-//$_SESSION['id'] = $_GET['id'];
-$_SESSION['id']="1";
+$_SESSION['id'] = $_GET['id'];
+//$_SESSION['id']="1";
 if (substr($_SESSION['id'], 0, 1) === "1") {
   $bonsite = "AI/genreAI.php?id=" . $_SESSION['id'];
 }
