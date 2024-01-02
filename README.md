@@ -6,7 +6,7 @@ Dans cette expérience, on cherche à savoir si l'ordonnancement des items d'un 
 - Groupe 3 : ordonnancement alphabétique et présence d'icônes (TI)
 - Groupe 4 : ordonnancement alphabétique et absence d'icône (TT)
 
-Le nombre d'items présents dans un menu de navigation a été contrôlé et égal à 5. 
+Le nombre d'items présents dans un menu de navigation a été contrôlé et est égal à 5. 
 
 Pour démarrer l'expérience, il faut utiliser le chemin suivant : cineteque2.0-main/site/tuto.php?id=numéroDeGroupe_numéroDuParticipant
 L'identifiant du participant se compose du groupe auquel il a été affecté et du numéro qui lui a été attribué dans ce groupe. 
