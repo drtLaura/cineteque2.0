@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo $_SESSION['id'];
+//echo $_SESSION['id'];
 $message = "Merci pour votre visite !";
 ?>
 
@@ -25,9 +25,6 @@ $message = "Merci pour votre visite !";
     <script src="savedata.js" onload="console.log('Le script savedata.js a été chargé avec succès')"></script>
 </head>
 <body>
-        <?php
-         print_r($_SESSION['data']);
-        ?>
         <script type="application/javascript"> 
             var data = JSON.parse('<?php echo json_encode($_SESSION['data']); ?>');
             savedata(data);

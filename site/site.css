@@ -16,6 +16,7 @@ html, body {
 
 body {
     font-family:Verdana;
+    
 }
 
 header {
@@ -25,7 +26,7 @@ header {
 }
 
 #en-tete div {
-  display:grid;
+    display:grid;
     grid-template-columns:4;
     grid-gap:0;
 }
@@ -62,6 +63,7 @@ header {
 }
 
 #consigne h3 {
+    text-align: left;
     position:absolute;
     left:260px;
     top:10px;
@@ -127,10 +129,6 @@ main div {
     border-radius:10px;
     padding-left:10px;
     padding-right:10px;
-    overflow-y: auto;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
-    max-height:600px;
 }
 
 #tuto img {
@@ -139,6 +137,10 @@ main div {
 
 #tuto #chance {
     color:var(--color7);
+}
+
+#tuto #chance img {
+    height:30px;
 }
 
 #tuto h3 {
@@ -176,6 +178,10 @@ main div {
     color:var(--color7);
 }
 
+#films #succes {
+    color:green;
+}
+
 #films {
     padding-bottom:10px;
 }
@@ -204,4 +210,24 @@ footer {
     background-color:var(--color2);
   height:80px;
     padding:10px;
+}
+
+#icone {
+    height:10px;
+}
+
+input[type="submit"]{
+    background-color:green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-family:Verdana;
+}
+
+input[type="submit"]:hover{
+    cursor:pointer;
+    color:black;
+    background-color:greenyellow;
 }
