@@ -20,7 +20,7 @@ session_start(); // démarrage session
                 </form>
         </div>
         <div id="consigne">
-            <h3>Voici la consigne que vous devez réaliser : <?php echo $_SESSION['consigne'];?></h3>
+            <h3>Voici la consigne que vous devez réaliser : <br><?php echo $_SESSION['consigne'];?></h3>
         </div>
         <div id="timer">
           <p></p>
@@ -48,22 +48,8 @@ session_start(); // démarrage session
     </header>
     <main>
         <div id="films">
-        <p id="message">Ce n'est pas la bonne page.</p>
-      <ul>
-              
-          <li>
-        <form method="post" action="../../succès.php">              <a>En savoir plus</a>
-</form>
-          </li>
-      </ul>
-            <ul>
-          <li>
-              <form action="paysAI.php" method="post">
-        <input type="submit" value="Aller à Pays">
-    </form>
-          </li>
-      </ul>
-            </div>
+            <?php echo $_SESSION["message"];?>
+        </div>
     </main>
     <footer>
     </footer>

@@ -1,16 +1,14 @@
 <?php
 session_start(); // démarrage session
+$chemin = $_SERVER['SCRIPT_NAME'];
+$nom_page = pathinfo($chemin, PATHINFO_FILENAME);
+$_SESSION['note']=$nom_page;
 //Création du message si succès 
-$page="2";
-$redirect="succesAI.php";
-$method="post";
-$type="submit";
-$value="Suivant";
-if($_SESSION["res"]===$page){
-    $_SESSION["message"]="<p>Vous avez trouvé la bonne page !</p><br>
-    <form action=$redirect method=$method>
-        <input type=$type value=$value>
-    </form>";
+if($_SESSION["res"][0]===$_SESSION["genre"] && $_SESSION["res"][1]===$_SESSION["pays"] && $_SESSION["res"][2]===$_SESSION["note"]){
+  $_SESSION["message"]="<h3 id=\"succes\">Bravo !</h3><p id=\"succes\">Vous avez trouvé la bonne page !</p><br>
+  <form action=\"succesAI.php\" method=\"post\">
+      <input type=\"submit\" value=\"Suivant\">
+  </form>";
 }
 ?>
 
@@ -32,7 +30,7 @@ if($_SESSION["res"]===$page){
                 </form>
         </div>
         <div id="consigne">
-            <h3>Voici la consigne que vous devez réaliser : <?php echo $_SESSION['consigne'];?></h3>
+            <h3>Voici la consigne que vous devez réaliser : <br><?php echo $_SESSION['consigne'];?></h3>
         </div>
         <div id="timer">
           <p></p>
@@ -45,7 +43,7 @@ if($_SESSION["res"]===$page){
     </header>
     <main>
         <div id="films">
-            <p id="message"><?php echo $_SESSION["message"];?></p>
+            <?php echo $_SESSION["message"];?>
         </div>
     </main>
     <footer>

@@ -1,5 +1,8 @@
 <?php
 session_start(); // démarrage session
+$chemin = $_SERVER['SCRIPT_NAME'];
+$nom_page = pathinfo($chemin, PATHINFO_FILENAME);
+$_SESSION['genre']=$nom_page;
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +23,7 @@ session_start(); // démarrage session
                 </form>
         </div>
         <div id="consigne">
-            <h3>Voici la consigne que vous devez réaliser : <?php echo $_SESSION['consigne'];?></h3>
+            <h3>Voici la consigne que vous devez réaliser : <br><?php echo $_SESSION['consigne'];?></h3>
         </div>
         <div id="timer">
           <p></p>
@@ -48,7 +51,7 @@ session_start(); // démarrage session
     </header>
     <main>
         <div id="films">
-            <p id="message">Ce n'est pas la bonne page.</p>
+            <?php echo $_SESSION["message"];?>
         </div>
     </main>
     <footer>
