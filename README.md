@@ -14,6 +14,6 @@ L'identifiant du participant se compose du groupe auquel il a été affecté et 
 Un exemple de chemin est : cineteque2.0-main/site/tuto.php?id=1_1
 Le participant en question est affecté au groupe 1 (AI) et est le premier de ce groupe a passer l'expérience. 
 
-L'expérience comprend cinq tâches identiques et un questionnaire. Ces cinq tâches ont chacune une consigne différente et sont réalisé sur un prototype de site web. Elles obligent les participants à utiliser tous les items des différents menus de navigation et se trouvent toujours dans le même ordre. Le questionnaire permet de contrôler la difficulté des consignes ainsi que la familiarité avec une interface web. 
+L'expérience comprend cinq tâches identiques et un questionnaire. Ces cinq tâches ont chacune une consigne différente et sont réalisées sur un prototype de site web. Elles obligent les participants à utiliser tous les items des différents menus de navigation et se trouvent toujours dans le même ordre. Le questionnaire permet de contrôler la difficulté des consignes ainsi que la familiarité avec une interface web. 
 
 Une page type du site prototypique comprend en en-tête un logo ainsi qu'une consigne, en bas de page un bandeau, sur le côté gauche un menu de navigation, et en contenu principal un encadré pouvant contenir un message d'erreur ou de succès. 
