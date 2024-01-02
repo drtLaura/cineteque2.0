@@ -14,7 +14,7 @@ L'identifiant du participant se compose du groupe auquel il a été affecté et 
 - numéroDuParticipant permet d'attribuer un numéro unique au participant dans le groupe
 
 Un exemple de chemin est : cineteque2.0-main/site/tuto.php?id=1_1<br />
-Le participant en question est affecté au groupe 1 (AI) et est le premier de ce groupe a passer l'expérience. 
+Le participant en question est affecté au groupe 1 (AI) et est le premier de ce groupe à passer l'expérience. 
 
 L'expérience comprend cinq tâches identiques et un questionnaire. Ces cinq tâches ont chacune une consigne différente et sont réalisées sur un prototype de site web. Elles obligent les participants à utiliser tous les items des différents menus de navigation et se trouvent toujours dans le même ordre. Le questionnaire permet de contrôler la difficulté des consignes ainsi que la familiarité avec une interface web. 
 
