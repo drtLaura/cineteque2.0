@@ -4,7 +4,7 @@ Dans cette expérience, on cherche à savoir si l'ordonnancement des items d'un 
 - Groupe 1 : ordonnancement aléatoire et présence d'icônes (AI)
 - Groupe 2 : ordonnancement aléatoire et absence d'icône (AT)
 - Groupe 3 : ordonnancement alphabétique et présence d'icônes (TI)
-- Groupe 4 : ordonnancement alphabétique et absence d'icône (TT)
+- Groupe 4 : ordonnancement alphabétique et absence d'icône (TT)<br />
 Le nombre d'items présents dans un menu de navigation a été contrôlé et égal à 5. 
 
 Pour démarrer l'expérience, il faut utiliser le chemin suivant : cineteque2.0-main/site/tuto.php?id=numéroDeGroupe_numéroDuParticipant
@@ -12,7 +12,7 @@ L'identifiant du participant se compose du groupe auquel il a été affecté et 
 - numéroDeGroupe définit à quel groupe le participant a été affecté 
 - numéroDuParticipant permet d'attribuer un numéro unique au participant dans le groupe
 
-Un exemple de chemin est : cineteque2.0-main/site/tuto.php?id=1_1
+Un exemple de chemin est : cineteque2.0-main/site/tuto.php?id=1_1<br />
 Le participant en question est affecté au groupe 1 (AI) et est le premier de ce groupe a passer l'expérience. 
 
 L'expérience comprend cinq tâches identiques et un questionnaire. Ces cinq tâches ont chacune une consigne différente et sont réalisées sur un prototype de site web. Elles obligent les participants à utiliser tous les items des différents menus de navigation et se trouvent toujours dans le même ordre. Le questionnaire permet de contrôler la difficulté des consignes ainsi que la familiarité avec une interface web. 
