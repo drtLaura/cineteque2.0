@@ -1,5 +1,11 @@
 # Expérience en ergonomie 
 
+## UE : Mesures comportementales 
+## Année : 2023
+## Auteurs : DURET Laura et PHILIPPE Aurore
+
+Nous sommes deux étudiantes en M1 MIASHS à l'UGA. Cette expérience s'inscrit dans le cadre de notre cursus universitaire durant le premier semestre de l'année scolaire 2023-2024. 
+
 Dans cette expérience, on cherche à savoir si l'ordonnancement des items d'un menu de navigation sur une page web et la présence d'icônes dans les items d'un menu de navigation sur une page web impactent le temps passé sur celle-ci et/ou la satisfaction des utilisateurs. Pour cela, nous avons choisi comme variables dépendantes le temps passé par consigne (en millisecondes) et le niveau de satisfaction des menus de navigation. Nous prenons comme variables indépendantes l'ordonnancement des items avec deux modalités : ordonnacement alphabétique et ordonnancement aléatoire ; et la présence d'icônes avec deux modalités : oui et non. Nous nous retrouvons donc avec quatre groupes : 
 - Groupe 1 : ordonnancement aléatoire et présence d'icônes (AI)
 - Groupe 2 : ordonnancement aléatoire et absence d'icône (AT)
