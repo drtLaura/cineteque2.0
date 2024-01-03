@@ -21,3 +21,5 @@ L'expérience comprend cinq tâches identiques et un questionnaire. Ces cinq tâ
 Une page type du site prototypique de cinémathèque comprend en en-tête un logo ainsi qu'une consigne, en bas de page un bandeau, sur le côté gauche un menu de navigation, et en contenu principal un encadré pouvant contenir un message d'erreur ou de succès. 
 
 Un premier menu de navigation comprend cinq genres cinématographiques, un deuxième menu de navigation comprend cinq pays et le dernier menu de navigation comprend des notes allant de 1 à 5. Les genres et les pays ont été choisis aléatoirement. 
+
+Le lien du serveur qu'on a utilisé pour faire passer nos expériences est le suivant : https://rafael.laboissiere.net/m1-miashs-2023-s7/ohh6Leim/experienceFinale/. 
