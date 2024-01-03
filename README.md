@@ -1,8 +1,8 @@
 # Expérience en ergonomie 
 
-## UE : Mesures comportementales 
-## Année : 2023
-## Auteurs : DURET Laura et PHILIPPE Aurore
+### UE : Mesures comportementales 
+### Année : 2023
+### Auteurs : DURET Laura et PHILIPPE Aurore
 
 Nous sommes deux étudiantes en M1 MIASHS à l'UGA. Cette expérience s'inscrit dans le cadre de notre cursus universitaire durant le premier semestre de l'année scolaire 2023-2024. 
 
