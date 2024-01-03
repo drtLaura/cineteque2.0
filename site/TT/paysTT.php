@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $_SESSION['debutpays'] = microtime(true) * 1000;
 
 $passegenre = (microtime(true) * 1000) - $_SESSION['debut'];

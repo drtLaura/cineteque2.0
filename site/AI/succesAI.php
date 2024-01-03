@@ -68,22 +68,21 @@ $passetotal = round($passetotal, 2);
         
     </head>
     <body>
-        
 
         <h1>Succès</h1>
         <?php  
         echo "<ul>";
         $length=0;
-        foreach($_SESSION['data'] as $cpt){
-            $length++;
-        }
+        //foreach($_SESSION['indexconsigne'] as $cpt){
+           // $length++;
+        //}
         $index=0;
-        for($index;$index<$length;$index++){
+        for($index;$index<$_SESSION['indexconsigne'];$index++){
             if($index===0){
                 echo "<li> Identifiant : ". $_SESSION['id']."</li>";
             }
             else {
-                echo "<li> Tâche ".$index." : ".$_SESSION['data']['temps passe consigne '.$index]." secondes</li>";
+                echo "<li> Tâche ".$index." : ".$_SESSION['data']['temps passe consigne '.$index]." millisecondes</li>";
             }
         }
         echo "</ul>";

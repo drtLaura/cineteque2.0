@@ -1,5 +1,6 @@
 <?php
 session_start(); // démarrage session
+$_SESSION["message"] = " Veuillez lire et effectuer la consigne en rouge";
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@ session_start(); // démarrage session
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../site.css">
-    <link rel="stylesheet" href="ai.css">
+    <link rel="stylesheet" href="at.css">
     <title>Genre</title>
 </head>
 <body>

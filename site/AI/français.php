@@ -5,7 +5,6 @@ $nom_page = pathinfo($chemin, PATHINFO_FILENAME);
 $_SESSION['pays']=$nom_page;
 
 $_SESSION['debutnote'] = microtime(true) * 1000;
-echo "debut note".$_SESSION['debut'];
 $passepays = (microtime(true) * 1000) - $_SESSION['debutpays'];
 $passepays = round($passepays, 2);
 

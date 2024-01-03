@@ -1,5 +1,6 @@
 <?php
 session_start(); // démarrage session
+$_SESSION["message"] = " Veuillez lire et effectuer la consigne en rouge";
 ?>
 
 <!DOCTYPE html>

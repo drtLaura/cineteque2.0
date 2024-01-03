@@ -3,7 +3,6 @@ session_start(); // démarrage session
 $chemin = $_SERVER['SCRIPT_NAME'];
 $nom_page = pathinfo($chemin, PATHINFO_FILENAME);
 $_SESSION['note']=$nom_page;
-echo "index consigne est ".$_SESSION['indexconsigne'];
 
 $passenote = (microtime(true) * 1000) - $_SESSION['debutnote'];
 $passenote = round($passenote, 2);

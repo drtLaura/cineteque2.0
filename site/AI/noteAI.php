@@ -2,7 +2,6 @@
 session_start(); // démarrage session
 
 $_SESSION['debutnote'] = microtime(true) * 1000;
-echo "debut note".$_SESSION['debut'];
 $passepays = (microtime(true) * 1000) - $_SESSION['debutpays'];
 $passepays = round($passepays, 2);
 

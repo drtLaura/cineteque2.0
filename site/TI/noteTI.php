@@ -2,7 +2,7 @@
 session_start();
 
 $_SESSION['debutnote'] = microtime(true) * 1000;
-
+echo "debut note".$_SESSION['debut'];
 $passepays = (microtime(true) * 1000) - $_SESSION['debutpays'];
 $passepays = round($passepays, 2);
 
@@ -30,7 +30,6 @@ $passepays = round($passepays, 2);
             'temps passe consigne 3 pays ' => $_SESSION['passecons3pays']
         ));
     }
-
 
     if ($_SESSION['indexconsigne'] == 4){
         $_SESSION['passecons4pays'] = $passepays;
